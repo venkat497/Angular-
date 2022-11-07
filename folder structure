@@ -1,0 +1,41 @@
+Folder Structure of Angular project:
+ 
+ a.e2e: end to end testing--used for testing the user behaviour on server.
+ b.node_modules folder: containes the folders which are installed into our application when created a project.
+ c.src: source code of angular application 
+ d.package.json: imp for every npm project. contains basic information software vesrion,dependencies which are in use
+ e.package-lock-json: no new versions will be updated to run the project.runs on older versions.
+ f.editorconfig file: used to set up team environment with standard rules followed by developers.
+ g.gitignore file: ignores in the git repository.
+ h.angular.json file: contains configuration of project.replaced angular-cli.json.
+ i.browserslist: used by autoprefixer to adjust css to suport the specified browsers.
+ j.test.js & karma.config.js: used for testing purposes.
+ k.README.mdfile: contains description of project which we like to give to end user so they can start using app in great way.
+ l.ts config.app.json: used during compilation of application & contains configuration information.
+ m.tsconfig.json:contains configuration for typescripts.
+ n.tsconfig.spec.json: used for testing purpose in node.js , helps in maintaing the details for testing.
+ o.tslint.json:used for maintability , functionality and readability errors for typescript code.
+ src folder:
+ Contains subfolders and files
+ a.app folder:files created by deafult in this when we create an ng application.
+ b.assets: we can store static assets like images,icons etc..,files, which needs to be copied while building application,
+ c.environments:to store environment, specific configuration of database credentials or server adress.
+ d.favicon.ico: icon displays on browser.
+ e.index.html:Contains html code with head and body section.
+ f.main.ts file:entry point for our angular application.
+ g.polyfills.ts: used for browser related configuration,also used by compiler to compile ts code to specific js method
+                 fill the gap to provide js features needed by angular and supported by latest version.
+ h.spect.ts:just for inspection.
+ i.app module: ng application itself ia module,
+               used to launch or build the code of application.
+               Any functionality can be made into a chunks.
+ j.app.module.js: bootstrap ha its component which has a logic code and reference to html, css.
+ k.app.componets:contains all components code for controlling its functionality.
+ l.routing.module.ts:contains routing configuration.
+                     purpose is to load & configure the router in a seperate file or for readability.
+
+Bundling and minification:
+
+2 imp process that angular adopts to reduce the size of application
+minification: removes white spaces,unwanted variable within file,
+              conatins big variable names to smaller variable names.
