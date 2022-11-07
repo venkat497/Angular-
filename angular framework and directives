@@ -1,0 +1,71 @@
+Angular FrameWork:- 
+
+Framework:-Basic structure , framework is built using programming language.
+
+           Things like routing,core,typescript etc.,parts of framework.
+
+AngularFramework:- It is used to build single page application (SPA) using ts,html and css.
+
+Angular components:-
+ 
+These are basic building block to build any application.Every angular application should have atleast one component.
+
+To generate a new component syntax:- ng generate component {component_name}
+
+Basic structure of application:-
+
+header, body, footer and sidenavigation.
+
+Angular directives:- 
+
+Directives are classes that add basic behaviour (new behaviour or enhance existing behaviour) of the template. 
+
+Types of directives:- 
+
+1) component directives ------@component
+
+2) structural directives
+
+   Builtin directives used to manipulate DOM
+
+DOM-->HTML is a document,Document object model
+
+  *ngIf  Else Then
+  *ngFor
+  *ngSwitch
+
+
+Structural directives will start with '*' astricks. 
+
+To make conditional statements or show  the templates based on condition we use structural directives.
+
+To make conditional If,we have to use *ngIf, else
+
+ To create a template reference variable 
+  
+   <ng-template></ng-template> 
+
+if else and then --> if can be directly written using *ngIf 
+                     then and else should be written in Template variable.
+**ngFor?? -- For loop 
+To iterate the elements in the array and generate the dynamic template in the HTML
+
+1.Index--index gives the current index of array elements
+2.first--tells if the element is first in the array
+3.last--if the element is last in the array
+4.Odd--if the index is odd
+5.even--if the index is even
+
+We can switch cases -->
+ [NgSwitch]
+ *ngSwitchCase
+ *ngSwitchDefault
+
+
+3) Attribute directives --> [ngClass] [ngStyle] 
+
+Custom Directives:- 
+
+In order to extend the functionality of an application we go with custom directives. 
+
+ng generate directive <name_of_directive>
