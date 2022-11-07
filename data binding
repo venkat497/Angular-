@@ -1,0 +1,92 @@
+Data Binding:- 
+
+Binding the data from the component to template or template to component.
+--Interacting with data.
+
+Data should get updated in HTML is based on our logic by functionality in the typescript.
+
+2 types of data binding:-
+
+a) One way data binding 
+
+--Data can only tranferred from component to view/html/template.
+
+b) Two way data binding 
+
+--Component to HTML 
+--HTML to component
+
+a)one way data binding:- 
+
+There 4 types--
+
+1.interpolation/ String interpolation:--
+
+  {{property_name}}
+
+2.Property binding:---
+
+The data can be transferred from component to view but transfers specially into the directives those are structural directives.
+
+syntax:-[ng style] = "property_name"
+
+eg.,<h1>Property binding</h1>
+   
+<div><img [src]="image"></div>
+
+3.Style/attribute binding:---
+
+It allows binding attributes of elements from component to view.
+
+Data flow is from c-->view
+
+syntax:-[href]="propert-name",[img],[src]
+
+4.custom attribute binding:---
+
+[],{{}} used the existing property to bind the data from c--> view
+
+it extends the properties,built in properties.
+
+Adds the customized and additional functionality to bind the data.
+
+syntax:-[attr.<attribute_name>]="property-name"
+
+whenever we are binding a property to html template,that property should be availiable in respective ts file.
+
+if we are declaring some variable/property in ts file and not using in html..
+
+Filmlink is not a attribute but we have created custom attribute..
+
+5.Event binding:--- 
+
+Allows to  bind events of elements from view to component.
+
+Data flow is one way ie.,From view to component.
+
+Javascript events:-click,forms,hover,input,onkeydown,onkeyUp
+
+syntax:-(click)="methodname()"
+
+e.g.,<div>
+  <button (click)="goBack()">Go back</button>
+</div>
+
+  ===========================================================================================
+
+b)Two way data binding:-
+
+The data flow is in both waysie., from component to view and view to component. 
+
+It is combination of property binding and event binding. 
+
+Binding is done using ngModel.
+
+syntax:-
+
+div,p,a etc., all the html templates we can add to this data binding
+
+[(ngmodel)]
+
+This two way data binding will be used in the forms or to read the values from html.
+then we need to import FormsModule.
