@@ -1,0 +1,34 @@
+Angular(softwares,versions)
+
+1.Install vscode & node.js                                         
+2.node-v (node.js version)                                                  
+3.npm-v (Node Package Manager(npm)version)                    
+
+4.open vscode 
+     |
+  Create a folder and name it 
+     |
+  Copy the path of folder
+     |
+  open vscode-cmd-paste the path
+     |
+ angular installed
+
+5.Installation of angular project:
+   open vs code in admin mode
+       |
+   Terminal-new terminal in cmd
+       |
+   a.npm install-g@angular/cli 
+       |
+   b.ng new my-app (project name of angular)
+       |
+   c.cd my app (cd-change directory)
+       |
+   d.ng serve (to open the project)
+
+Node.js is a open source,server-side backend
+
+[npm with node.js by default manages project dependencies].
+
+[cli-command line interface used to build angular app by automatic operations rather than manually])
