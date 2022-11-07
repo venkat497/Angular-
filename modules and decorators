@@ -1,0 +1,90 @@
+Modules in angular:- 
+
+Modules in angular are logical functional components (multiple components) become part of one component. 
+
+Angular applications are modular and angular has its own modularity system called NgModules.
+
+Q. How does angular knows the modules,services and components..?
+
+Ans:-By decorators.
+
+>>Decorators:- 
+
+Decorators are metadata or type of processing that which angular does.
+
+These are design patterns used to isolate the modification or decoration of a class without modifying the source code.
+
+Decorators are functions takes a single metadata object,whose roperties describe the modules.
+
+--TS feature uses decorators for passing metadata.
+
+--These are called/invoked during runtime.
+
+--decorators are functions that will return a function.
+
+Metadata:-Which contains the informations about the process which we are doing.
+
+>>Types of decorators:-
+
+4 main types of decorators:-
+
+1) class decorators:- a)@NgMdoule b)@Component
+2) Property decoratorsfor properties inside classes:- a)Input b)@output 
+3) Method decorators for methods inside classes:- a)@HostListener
+4) Parameter decorators for parameters inside clas constructor:- a)@Inject 
+
+Each decorator as a unique role.
+
+Decorator always start with symbol @. 
+
+Whenever the decorators are defined those will be imported from @angular/core.
+
+1) class decorators:- 
+
+They allow us to tell angular a particular class is a component or a module.
+the decorator allow us to define this effect without putting any code inside the class.
+In this no code is needed in the class to tell angular.we need to decorate it .angular will do rest.
+
+a)@NgModule:- 
+
+  Every application has atleast one NgModule class,the root module which is conventionally named AppModule and resides in afile named app.module.ts.
+
+  Thsese are the containers for a cohesive block of code dedicated to an application domain,a workflow,or a closely related set of capabilities. 
+
+ >>Properties of @NgModules:-  
+
+   1) Declarations:- The components,directives and pipes that belongs to NgModule.
+   
+   2) Exports:- The subset of declarations that should be visible and usable in the component templates of other NgModules.
+
+   3) Imports:- Other modules whose exported classes are needed by component templates declared in NgModule.
+
+   4) Providers:- Creators of services that this NgModule contributes to the global collection of services;they become accessible in all parts of application. 
+
+   5)Bootstrap:- The main application view,called the root component,which hosts all other application views.Only the root NgModule should set the bootstrap property.
+
+src/app/app.module.ts:-
+  
+import { NgModule } from '@angular/core';
+
+  
+import { BrowserModule } from '@angular/platform-browser';
+
+  
+@NgModule({
+
+  imports:      [ BrowserModule ],
+
+  providers:    [ Logger ],
+
+  declarations: [ AppComponent ],
+
+  exports:      [ AppComponent ],
+
+  bootstrap:    [ AppComponent ]
+
+})
+
+export class AppModule { } 
+
+A root NgModule has no reason to export anything because other modules don't need to import the root NgModule.
